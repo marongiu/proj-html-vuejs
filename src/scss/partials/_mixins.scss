@@ -1,0 +1,12 @@
+@mixin flex($align,$content,$wrap){
+  display: flex;
+  align-items: $align;
+  justify-content: $content;
+  flex-wrap: $wrap;
+}
+
+@mixin clearfix{
+  display: table;
+  clear: both;
+  content: '';
+}
