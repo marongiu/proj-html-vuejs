@@ -4,10 +4,35 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
 
-ul {
-  list-style: none;
+.container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+header {
+  background: #F8F9FC;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding-top: 30px;
+}
+header nav #logo img {
+  max-width: 150px;
+}
+header nav ul#link-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
 }

@@ -1,0 +1,13 @@
+header {
+  background: $header-background;
+  nav {
+    @include flex(center, space-between, nowrap);
+    padding-top: 30px;
+    #logo img{
+      max-width: 150px;
+    }
+    ul#link-center {
+      @include flex(center,center,nowrap);
+    }
+  }
+}

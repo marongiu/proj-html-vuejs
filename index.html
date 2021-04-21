@@ -6,12 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Landrick</title>
   <link rel="stylesheet" href="./dist/css/master.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 <body>
 
   <div id="root">
-    <header>
+    <!-- Header -->
+    <header >
+      <div class="container">
+        <!-- Navbar -->
+        <nav>
+          <!-- Logo -->
+          <span id="logo"><img src="./dist/img/logo-dark.png" alt="logo landrick"></span>
+          <!-- Navbar center -->
+          <ul id="link-center">
+            <li v-for="link in navbar" >
+              <!-- Nomi link navbar center -->
+              <a href="">{{link.name}}</a>
+              <!-- Icone navbar center -->
+              <i v-if="(link.content)" class="fas" :class="link.content"></i>
+            </li>
+          </ul>
 
+          <!-- Navbar right -->
+          <ul id="link-right">
+            <li>a</li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -19,7 +41,7 @@
     </main>
 
     <footer>
-      
+
     </footer>
   </div>
 
