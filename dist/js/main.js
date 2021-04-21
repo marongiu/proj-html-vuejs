@@ -36,6 +36,25 @@ var app = new Vue({
     }, {
       prefix: 'far',
       icon: 'fa-user'
+    }],
+    patners: [{
+      name: 'Amazon',
+      image: './dist/img/amazon.svg'
+    }, {
+      name: 'Google',
+      image: './dist/img/google.svg'
+    }, {
+      name: 'Lenovo',
+      image: './dist/img/lenovo.svg'
+    }, {
+      name: 'Paypal',
+      image: './dist/img/paypal.svg'
+    }, {
+      name: 'Shopify',
+      image: './dist/img/shopify.svg'
+    }, {
+      name: 'Spotify',
+      image: './dist/img/spotify.svg'
     }]
   },
   mounted: function mounted() {

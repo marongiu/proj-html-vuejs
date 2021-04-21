@@ -6,6 +6,7 @@
 
 body {
   font-family: "Nunito", sans-serif;
+  font-weight: 700;
 }
 
 ul {
@@ -23,6 +24,9 @@ a {
 
 header {
   background: #F8F9FC;
+  padding-bottom: 50px;
+  border-bottom-right-radius: 13%;
+  border-bottom-left-radius: 13%;
 }
 header nav {
   display: flex;
@@ -87,12 +91,84 @@ header nav ul#link-right li:not(:first-child) a i {
 }
 
 .jumbotron {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.jumbotron .jumbotron-title {
   padding-top: 150px;
 }
-.jumbotron .jumbotron-title span {
+.jumbotron .jumbotron-title section#jumbotron-title-info * {
+  padding: 5px 0;
+}
+.jumbotron .jumbotron-title section#jumbotron-title-info span {
   background: #2F55D41A;
   padding: 2px 8px;
   border-radius: 15px;
-  font-size: 14px;
+  font-size: 13px;
   color: #2F55D4;
+}
+.jumbotron .jumbotron-title section#jumbotron-title-info h1 {
+  font-size: 44px;
+  letter-spacing: 1px;
+}
+.jumbotron .jumbotron-title section#jumbotron-title-info p {
+  color: #8492A6;
+  font-size: 18px;
+  font-weight: 400;
+}
+.jumbotron .jumbotron-title section#jumbotron-button {
+  margin-top: 20px;
+}
+.jumbotron .jumbotron-title section#jumbotron-button a {
+  background: #fff;
+  color: #2F55D4;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 5px;
+  border: 1px solid #2F55D4;
+}
+.jumbotron .jumbotron-title section#jumbotron-button a:hover {
+  background: #2F55D4;
+  color: #fff;
+  transition: 1.2s;
+}
+.jumbotron .jumbotron-title section#jumbotron-button a:first-child {
+  background: #2F55D4;
+  color: #fff;
+  border: none;
+}
+.jumbotron .jumbotron-title section#jumbotron-button a:first-child:hover {
+  background: #fff;
+  color: #2F55D4;
+  border: 1px solid #2F55D4;
+}
+.jumbotron .jumbotron-title section#jumbotron-button p {
+  font-weight: 400;
+  margin-top: 30px;
+  color: #8492A6;
+}
+.jumbotron .jumbotron-image {
+  padding-top: 130px;
+}
+
+.patner {
+  margin-top: 100px;
+}
+.patner hr {
+  background: #ADB5BD;
+  opacity: 0.5;
+  border: none;
+  height: 1px;
+}
+.patner ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+}
+.patner ul li img {
+  width: 80px;
 }

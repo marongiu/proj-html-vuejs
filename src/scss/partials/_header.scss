@@ -1,5 +1,8 @@
 header {
   background: $header-background;
+  padding-bottom: 50px;
+  border-bottom-right-radius: 13%;
+  border-bottom-left-radius: 13%;
   nav {
     @include flex(center, space-between, nowrap);
     padding-top: 25px;
