@@ -2,12 +2,47 @@ header {
   background: $header-background;
   nav {
     @include flex(center, space-between, nowrap);
-    padding-top: 30px;
+    padding-top: 20px;
     #logo img{
       max-width: 150px;
     }
     ul#link-center {
       @include flex(center,center,nowrap);
+      text-transform: uppercase;
+      li {
+        padding: 0 20px;
+        a {
+          color: $dark-grey;
+          font-size: 15px;
+        }
+        i {
+          padding: 0 5px;
+          color: $dark-grey;
+        }
+      }
+    }
+    ul#link-right {
+      @include flex(center,center,nowrap);
+      li {
+        color: $light-grey;
+        margin: 0 5px;
+        a:first-child{
+          color: $light-grey;
+          margin-right: 2px;
+        }
+        &:not(:first-child) {
+          a  {
+            color: $dark-blue;
+            padding: 7px 10px;
+            background: $social-background;
+            border-radius: 7px;
+            box-shadow: 0.5px 5px 5px 0px  rgba(47,85,212,0.3);
+            i {
+              font-size: 15px;
+            }
+          }
+        }
+      }
     }
   }
 }

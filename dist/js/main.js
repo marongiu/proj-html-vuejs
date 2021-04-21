@@ -1,7 +1,8 @@
 var app = new Vue({
   el: '#root',
   data: {
-    navbar: [
+    // Scritte navbar centrali
+    navbar_center: [
       {
         name: 'Home'
       },
@@ -17,6 +18,25 @@ var app = new Vue({
         name: 'Docs',
         content: 'fa-angle-down'
       }
+    ],
+    // Icone navbar destra
+    navbar_right: [
+      {
+        prefix: 'fas',
+        icon: 'fa-search'
+      },
+      {
+        prefix: 'fab',
+        icon: 'fa-github'
+      },
+      {
+        prefix: 'fas',
+        icon: 'fa-box'
+      },
+      {
+        prefix: 'far',
+        icon: 'fa-user'
+      },
     ]
   },
   mounted() {

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Nunito", sans-serif;
+}
+
 ul {
   list-style: none;
 }
@@ -25,7 +29,7 @@ header nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 header nav #logo img {
   max-width: 150px;
@@ -35,4 +39,40 @@ header nav ul#link-center {
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
+  text-transform: uppercase;
+}
+header nav ul#link-center li {
+  padding: 0 20px;
+}
+header nav ul#link-center li a {
+  color: #3C4858;
+  font-size: 15px;
+}
+header nav ul#link-center li i {
+  padding: 0 5px;
+  color: #3C4858;
+}
+header nav ul#link-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+header nav ul#link-right li {
+  color: #ADB5BD;
+  margin: 0 5px;
+}
+header nav ul#link-right li a:first-child {
+  color: #ADB5BD;
+  margin-right: 2px;
+}
+header nav ul#link-right li:not(:first-child) a {
+  color: #2F55D4;
+  padding: 7px 10px;
+  background: #2F55D41A;
+  border-radius: 7px;
+  box-shadow: 0.5px 5px 5px 0px rgba(47, 85, 212, 0.3);
+}
+header nav ul#link-right li:not(:first-child) a i {
+  font-size: 15px;
 }
