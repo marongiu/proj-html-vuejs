@@ -46,7 +46,10 @@ header nav ul#link-center li {
 }
 header nav ul#link-center li a {
   color: #3C4858;
-  font-size: 15px;
+  font-size: 13px;
+}
+header nav ul#link-center li a:hover {
+  color: #2F55D4;
 }
 header nav ul#link-center li i {
   padding: 0 5px;
@@ -71,7 +74,13 @@ header nav ul#link-right li:not(:first-child) a {
   padding: 7px 10px;
   background: #2F55D41A;
   border-radius: 7px;
-  box-shadow: 0.5px 5px 5px 0px rgba(47, 85, 212, 0.3);
+  box-shadow: 0.5px 5px 5px 0px #c0ccf2;
+}
+header nav ul#link-right li:not(:first-child) a:hover {
+  transition: 0.7s;
+  background: #2F55D4;
+  color: #ffff;
+  box-shadow: none;
 }
 header nav ul#link-right li:not(:first-child) a i {
   font-size: 15px;
