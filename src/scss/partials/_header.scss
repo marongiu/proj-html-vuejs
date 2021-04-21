@@ -2,9 +2,9 @@ header {
   background: $header-background;
   nav {
     @include flex(center, space-between, nowrap);
-    padding-top: 20px;
+    padding-top: 25px;
     #logo img{
-      max-width: 150px;
+      max-width: 140px;
     }
     ul#link-center {
       @include flex(center,center,nowrap);
@@ -43,7 +43,7 @@ header {
             &:hover {
               transition: 0.7s;
               background: $dark-blue;
-              color: #ffff;
+              color: $white;
               box-shadow: none;
             }
             i {
@@ -55,3 +55,5 @@ header {
     }
   }
 }
+
+@import 'jumbotron.scss';

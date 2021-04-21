@@ -1,0 +1,15 @@
+.jumbotron {
+  // @include flex(center,space-between,nowrap);
+  padding-top: 150px;
+  .jumbotron-title {
+    span {
+      background: $social-background;
+      padding: 2px 8px;
+      border-radius: 15px;
+      font-size: 14px;
+      color: $dark-blue;
+    }
+  }
+  .jumbotron-image {
+  }
+}

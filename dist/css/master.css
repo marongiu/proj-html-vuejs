@@ -29,10 +29,10 @@ header nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding-top: 20px;
+  padding-top: 25px;
 }
 header nav #logo img {
-  max-width: 150px;
+  max-width: 140px;
 }
 header nav ul#link-center {
   display: flex;
@@ -79,9 +79,20 @@ header nav ul#link-right li:not(:first-child) a {
 header nav ul#link-right li:not(:first-child) a:hover {
   transition: 0.7s;
   background: #2F55D4;
-  color: #ffff;
+  color: #fff;
   box-shadow: none;
 }
 header nav ul#link-right li:not(:first-child) a i {
   font-size: 15px;
+}
+
+.jumbotron {
+  padding-top: 150px;
+}
+.jumbotron .jumbotron-title span {
+  background: #2F55D41A;
+  padding: 2px 8px;
+  border-radius: 15px;
+  font-size: 14px;
+  color: #2F55D4;
 }
