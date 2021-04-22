@@ -1,4 +1,7 @@
 .features {
+  @include flex(center,center,nowrap);
+  flex-direction: column;
+  text-align: center;
   margin-top: $mg-100;
   h2 {
     font-size: 30px;
@@ -21,7 +24,9 @@
 
       &:hover {
         cursor: pointer;
-        background-image: url('/dist/img/1.png');
+        transform: translateY(-20px);
+        transition: 2s;
+        box-shadow: 5px 5px 5px 5px rgba(60,72,88,0.20);
       }
 
     .icon {

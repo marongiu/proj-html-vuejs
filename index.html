@@ -72,7 +72,7 @@
         <hr>
         <div class="container">
           <ul>
-            <li v-for="patner in patners"><img :src="patner.image" alt=""></li>
+            <li v-for="patner in patners"><img :src="patner.image" alt="Lista patner"></li>
           </ul>
         </div>
       </div>
@@ -83,33 +83,37 @@
         <h2>Key Features</h2>
         <p>Start working with <span class="dark-blue">Landrick</span> that can provide everything you need to generate<br> awareness, drive traffic, connect.</p>
       </div>
-    <!-- Card features -->
+      <!-- Card features --> <!-- TODO: Js -->
       <div class="card-container">
-        <div class="card">
-          <div class="icon"><i class="fab fa-dropbox"></i></div>
-          <h3 >Modular</h3>
-          <p >Composed in a pseudo-Latin language which more or less corresponds.</p>
-          <a  href="">Read More</a>
-        </div>
-        <div class="card">
-          <div class="icon"><i class="fas fa-desktop"></i></div>
-          <h3 >Modular</h3>
-          <p >Composed in a pseudo-Latin language which more or less corresponds.</p>
-          <a  href="">Read More</a>
-        </div>
-        <div class="card">
-          <div class="icon"><i class="fas fa-paint-brush"></i></div>
-          <h3 >Modular</h3>
-          <p >Composed in a pseudo-Latin language which more or less corresponds.</p>
-          <a  href="">Read More</a>
-        </div>
-        <div class="card">
-          <div class="icon"><i class="fas fa-expand-arrows-alt"></i></div>
-          <h3 >Modular</h3>
-          <p >Composed in a pseudo-Latin language which more or less corresponds.</p>
-          <a  href="">Read More</a>
+        <div class="card" v-for="card in cards">
+          <div class="icon"><i :class="card.icon"></i></div>
+          <h3 >{{card.title}}</h3>
+          <p>{{card.paragraph}}</p>
+          <a  href="">{{card.anchor}}</a>
         </div>
       </div>
+      <!-- Sezione npm -->
+      <div class="quickstart">
+        <span class="dark-blue">Quickstart</span>
+        <h2>Awesome isn't it? Let's dive in!</h2>
+        <p>Start working with <span class="dark-blue">Landrick</span> that can provide everything you need to generate <br>awareness, drive traffic, connect.</p>
+      </div>
+      <!-- Creazione console  -->
+      <div class="quickstart-npm">
+        <ul>
+          <li>npm</li>
+          <li>nuget</li>
+          <li>spm</li>
+          <li>github</li>
+        </ul>
+        <p class="mt-1"><span class="green">$</span>npm install <span class="green">-g</span> claps.js</p>
+      </div>
+      <div class="quickstart-npn-subtitle container mt-2">
+        <span class="grey mr-4"><i class="far fa-check-circle green"></i> Organize your data</span>
+        <span class="grey"><i class="far fa-check-circle green"></i> Work with any team</span>
+      </div>
+
+      
     </main>
 
     <footer>

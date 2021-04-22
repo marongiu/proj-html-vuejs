@@ -64,6 +64,33 @@ var app = new Vue({
         image: './dist/img/spotify.svg'
       },
     ],
+
+    cards: [
+      {
+        title: 'Modular',
+        paragraph: 'Composed in a pseudo-Latin language which more or less corresponds.',
+        anchor: 'Read More >',
+        icon: 'fab fa-dropbox'
+      },
+      {
+        title: 'Modular',
+        paragraph: 'Composed in a pseudo-Latin language which more or less corresponds.',
+        anchor: 'Read More >',
+        icon: 'fas fa-desktop'
+      },
+      {
+        title: 'Modular',
+        paragraph: 'Composed in a pseudo-Latin language which more or less corresponds.',
+        anchor: 'Read More >',
+        icon: 'fas fa-paint-brush'
+      },
+      {
+        title: 'Modular',
+        paragraph: 'Composed in a pseudo-Latin language which more or less corresponds.',
+        anchor: 'Read More >',
+        icon: 'fas fa-expand-arrows-alt'
+      }
+    ]
   },
 
   mounted() {

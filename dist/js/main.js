@@ -55,6 +55,27 @@ var app = new Vue({
     }, {
       name: 'Spotify',
       image: './dist/img/spotify.svg'
+    }],
+    cards: [{
+      title: 'Modular',
+      paragraph: 'Composed in a pseudo-Latin language which more or less corresponds.',
+      anchor: 'Read More >',
+      icon: 'fab fa-dropbox'
+    }, {
+      title: 'Modular',
+      paragraph: 'Composed in a pseudo-Latin language which more or less corresponds.',
+      anchor: 'Read More >',
+      icon: 'fas fa-desktop'
+    }, {
+      title: 'Modular',
+      paragraph: 'Composed in a pseudo-Latin language which more or less corresponds.',
+      anchor: 'Read More >',
+      icon: 'fas fa-paint-brush'
+    }, {
+      title: 'Modular',
+      paragraph: 'Composed in a pseudo-Latin language which more or less corresponds.',
+      anchor: 'Read More >',
+      icon: 'fas fa-expand-arrows-alt'
     }]
   },
   mounted: function mounted() {
@@ -163,8 +184,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/js/main": 0,
-/******/ 			"css/master": 0
+/******/ 			"/dist/js/main": 0,
+/******/ 			"dist/css/master": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -212,8 +233,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/master"], () => (__webpack_require__("./src/js/main.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/master"], () => (__webpack_require__("./src/scss/master.scss")))
+/******/ 	__webpack_require__.O(undefined, ["dist/css/master"], () => (__webpack_require__("./src/js/main.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["dist/css/master"], () => (__webpack_require__("./src/scss/master.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

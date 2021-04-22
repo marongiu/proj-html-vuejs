@@ -1,0 +1,46 @@
+
+.quickstart {
+  margin-top: $mg-100;
+  @include flex(center,center,nowrap);
+  flex-direction: column;
+  * {
+    margin-top: $mg-1;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  p {
+    color: $grey;
+    text-align: center;
+  }
+}
+
+
+  .quickstart-npm {
+    margin: 0 auto;
+    margin-top: $mg-5;
+    padding: $pd-2;
+    border-radius: 10px;
+    width: 60%;
+    background: $npm-background;
+    ul {
+      @include flex(center,space-between,nowrap);
+      border: 1px solid #5f6978;
+      border-radius: 10px;
+      background: $npm-list;
+      li {
+        text-align: center;
+        width: calc(100% / 4);
+        color: $white;
+        padding: $pd-1;
+        &:first-child {
+          border-radius: 10px;
+          background: $npm-background;
+        }
+      }
+    }
+
+    p {
+      color: $grey;
+    }
+  }
