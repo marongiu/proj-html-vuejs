@@ -25,15 +25,15 @@ a {
 header {
   background: #F8F9FC;
   padding-bottom: 50px;
-  border-bottom-right-radius: 13%;
-  border-bottom-left-radius: 13%;
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
 }
 header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding-top: 25px;
+  padding-top: 20px;
 }
 header nav #logo img {
   max-width: 140px;
@@ -54,6 +54,7 @@ header nav ul#link-center li a {
 }
 header nav ul#link-center li a:hover {
   color: #2F55D4;
+  font-weight: bold;
 }
 header nav ul#link-center li i {
   padding: 0 5px;
@@ -110,7 +111,7 @@ header nav ul#link-right li:not(:first-child) a i {
   color: #2F55D4;
 }
 .jumbotron .jumbotron-title section#jumbotron-title-info h1 {
-  font-size: 44px;
+  font-size: 43px;
   letter-spacing: 1px;
 }
 .jumbotron .jumbotron-title section#jumbotron-title-info p {
@@ -167,8 +168,20 @@ header nav ul#link-right li:not(:first-child) a i {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  margin-top: 30px;
+  margin-top: 40px;
+  padding: 0 30px;
+}
+.patner ul li {
+  transition: width 2s, height 2s, transform 1s;
 }
 .patner ul li img {
-  width: 80px;
+  width: 70px;
+}
+.patner ul li:hover {
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+
+main .features {
+  margin-top: 100px;
 }

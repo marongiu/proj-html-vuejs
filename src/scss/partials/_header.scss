@@ -1,11 +1,11 @@
 header {
   background: $header-background;
-  padding-bottom: 50px;
-  border-bottom-right-radius: 13%;
-  border-bottom-left-radius: 13%;
+  padding-bottom: $pd-5;
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
   nav {
     @include flex(center, space-between, nowrap);
-    padding-top: 25px;
+    padding-top: $pd-2;
     #logo img{
       max-width: 140px;
     }
@@ -13,16 +13,17 @@ header {
       @include flex(center,center,nowrap);
       text-transform: uppercase;
       li {
-        padding: 0 20px;
+        padding: 0 $pd-2;
         a {
           color: $dark-grey;
           font-size: 13px;
           &:hover {
             color: $dark-blue;
+            font-weight: bold;
           }
         }
         i {
-          padding: 0 5px;
+          padding: 0 $pd-0_5;
           color: $dark-grey;
         }
       }
@@ -31,7 +32,7 @@ header {
       @include flex(center,center,nowrap);
       li {
         color: $light-grey;
-        margin: 0 5px;
+        margin: 0 $mg-0_5;
         a:first-child{
           color: $light-grey;
           margin-right: 2px;
@@ -39,7 +40,7 @@ header {
         &:not(:first-child) {
           a  {
             color: $dark-blue;
-            padding: 7px 10px;
+            padding: 7px $pd-1;
             background: $social-background;
             border-radius: 7px;
             box-shadow: 0.5px 5px 5px 0px $box-shadow;
