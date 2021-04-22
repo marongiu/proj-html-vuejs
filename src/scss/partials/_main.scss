@@ -9,9 +9,6 @@ main {
     margin-top: $mg-150;
     .tools-title {
       font-weight: 400;
-      h2 {
-        font-size: 30px;
-      }
       ul {
         margin: $mg-3 0;
         li {
@@ -45,9 +42,6 @@ main {
     @include flex(center,center,nowrap);
     .landrick-rates-title {
       text-align: center;
-      h2 {
-        font-size: 30px;
-      }
     }
   }
 
@@ -56,9 +50,45 @@ main {
   .buy-card-container {
     @include flex(center,space-between,nowrap);
     .buy-card {
+      color: $grey;
       margin-right: $mg-3;
       box-shadow:  0 0 3px rgba(60,72,88,0.15);
       padding: $pd-2;
+      border-radius: 10px;
+
+      h2 {
+        color: black;
+      }
+      hr {
+        border: 0;
+        height: 1px;
+        background: $light-grey;
+      }
+      span {
+        padding: $pd-1 $pd-2;
+        background: $social-background;
+        color: $dark-blue;
+        border-radius: 15px;
+      }
+
+      ul {
+        li {
+          padding: 5px 0;
+        }
+      }
+      .buy-button {
+        width: 100%;
+        button {
+          background: $dark-blue;
+          color: $white;
+          width: 100%;
+          height: 50px;
+          border: none;
+          border-radius: 10px;
+          font-weight: bold;
+        }
+      }
+
     }
   }
 }

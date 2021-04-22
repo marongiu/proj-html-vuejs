@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+h2 {
+  font-size: 30px;
+}
+
 .dark-blue {
   color: $dark-blue;
   font-weight: bold;
@@ -16,6 +20,9 @@
   color: #8492A6;
 }
 
+.mb-2 {
+  margin: 20px 0;
+}
 .mt-1 {
   margin-top: 10px;
 }

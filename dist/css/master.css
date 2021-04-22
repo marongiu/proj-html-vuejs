@@ -23,6 +23,10 @@ a {
   margin: 0 auto;
 }
 
+h2 {
+  font-size: 30px;
+}
+
 .dark-blue {
   color: #2F55D4;
   font-weight: bold;
@@ -34,6 +38,10 @@ a {
 
 .grey {
   color: #8492A6;
+}
+
+.mb-2 {
+  margin: 20px 0;
 }
 
 .mt-1 {
@@ -237,9 +245,6 @@ main .features {
   text-align: center;
   margin-top: 100px;
 }
-main .features h2 {
-  font-size: 30px;
-}
 main .features p {
   margin-top: 20px;
   color: #8492A6;
@@ -298,9 +303,6 @@ main .quickstart {
 main .quickstart * {
   margin-top: 10px;
 }
-main .quickstart h2 {
-  font-size: 30px;
-}
 main .quickstart p {
   color: #8492A6;
   text-align: center;
@@ -345,9 +347,6 @@ main .tools {
 main .tools .tools-title {
   font-weight: 400;
 }
-main .tools .tools-title h2 {
-  font-size: 30px;
-}
 main .tools .tools-title ul {
   margin: 30px 0;
 }
@@ -381,9 +380,6 @@ main .landrick-rates {
 main .landrick-rates .landrick-rates-title {
   text-align: center;
 }
-main .landrick-rates .landrick-rates-title h2 {
-  font-size: 30px;
-}
 main .buy-card-container {
   display: flex;
   align-items: center;
@@ -391,7 +387,38 @@ main .buy-card-container {
   flex-wrap: nowrap;
 }
 main .buy-card-container .buy-card {
+  color: #8492A6;
   margin-right: 30px;
   box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
   padding: 20px;
+  border-radius: 10px;
+}
+main .buy-card-container .buy-card h2 {
+  color: black;
+}
+main .buy-card-container .buy-card hr {
+  border: 0;
+  height: 1px;
+  background: #ADB5BD;
+}
+main .buy-card-container .buy-card span {
+  padding: 10px 20px;
+  background: #2F55D41A;
+  color: #2F55D4;
+  border-radius: 15px;
+}
+main .buy-card-container .buy-card ul li {
+  padding: 5px 0;
+}
+main .buy-card-container .buy-card .buy-button {
+  width: 100%;
+}
+main .buy-card-container .buy-card .buy-button button {
+  background: #2F55D4;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
 }
