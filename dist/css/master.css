@@ -28,6 +28,26 @@ a {
   font-weight: bold;
 }
 
+.mt-1 {
+  margin-top: 10px;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mt-3 {
+  margin-top: 30px;
+}
+
+.mt-4 {
+  margin-top: 40px;
+}
+
+.mt-5 {
+  margin-top: 50px;
+}
+
 header {
   background: #F8F9FC;
   padding-bottom: 50px;
@@ -210,6 +230,13 @@ main .card-container .card {
   margin-right: 20px;
   box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
   padding: 20px;
+  font-weight: 400;
+}
+main .card-container .card:hover {
+  cursor: pointer;
+  /* background-image: url("../img/1.png"); */
+  transform: translateY(-20px);
+  transition: 2s;
 }
 main .card-container .card .icon {
   display: flex;
@@ -217,10 +244,20 @@ main .card-container .card .icon {
   justify-content: center;
   flex-wrap: nowrap;
   padding: 20px;
-  width: 70px;
-  height: 70px;
-  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 7px;
   background-color: #2F55D41A;
   color: #2F55D4;
   font-size: 20px;
+}
+main .card-container .card h3 {
+  padding-top: 20px;
+}
+main .card-container .card p {
+  padding: 20px 0;
+  color: #8492A6;
+}
+main .card-container .card a {
+  color: #2F55D4;
 }

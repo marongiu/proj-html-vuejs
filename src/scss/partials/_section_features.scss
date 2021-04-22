@@ -17,16 +17,35 @@
     margin-right: $mg-2;
     box-shadow:  0 0 3px rgba(60,72,88,0.15);
     padding: $pd-2;
+    font-weight: 400;
+
+      &:hover {
+        cursor: pointer;
+        background-image: url('/dist/img/1.png');
+      }
 
     .icon {
       @include flex(center,center,nowrap);
       padding: $pd-2;
-      width: 70px;
-      height: 70px;
-      border-radius: 10px;
+      width: 60px;
+      height: 60px;
+      border-radius: 7px;
       background-color: $social-background;
       color: $dark-blue;
       font-size: 20px;
+    }
+
+    h3 {
+      padding-top: $pd-2;
+    }
+
+    p {
+      padding: $pd-2 0;
+      color: $grey;
+    }
+
+    a {
+      color: $dark-blue;
     }
   }
 }
