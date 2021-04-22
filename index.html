@@ -141,54 +141,14 @@
 
         <!-- Sezione card acquisto -->
         <div class="buy-card-container mt-100">
-          <div class="buy-card">
-            <span class="dark-blue">Basic</span>
-            <h2 class="mt-2">$9.00</h2>
-            <p>Per Month</p>
-            <p class="mt-1">All the basics for businesses that are just getting started.</p>
+          <div class="buy-card" v-for="buycard in section_buy">
+            <span class="dark-blue">{{buycard.type}}</span>
+            <h2 class="mt-2">{{buycard.price}}</h2>
+            <p class="mt-1">{{buycard.time}}</p>
+            <p class="mt-1">{{buycard.description}}</p>
             <hr class="mb-2">
             <ul>
-              <li><i class="far fa-check-circle dark-blue mr-2"></i>Full Access</li>
-              <li><i class="far fa-check-circle dark-blue mr-2"></i>Enhanced Security</li>
-              <li><i class="far fa-check-circle dark-blue mr-2"></i>Source Files</li>
-              <li><i class="far fa-check-circle dark-blue mr-2"></i>1 Domain Free</li>
-              <li><i class="far fa-check-circle dark-blue mr-2"></i>Enhanced Security</li>
-            </ul>
-            <div class="buy-button mt-2">
-              <button type="button" name="button">Buy Now</button>
-            </div>
-            <p class="mt-1">*No credit card required</p>
-          </div>
-          <div class="buy-card">
-            <span class="dark-blue">Basic</span>
-            <h2 class="mt-2">$9.00</h2>
-            <p>Per Month</p>
-            <p class="mt-1">All the basics for businesses that are just getting started.</p>
-            <hr class="mb-2">
-            <ul>
-              <li><i class="far fa-check-circle dark-blue mr-2"></i>Full Access</li>
-              <li><i class="far fa-check-circle dark-blue mr-2"></i>Enhanced Security</li>
-              <li><i class="far fa-check-circle dark-blue mr-2"></i>Source Files</li>
-              <li><i class="far fa-check-circle dark-blue mr-2"></i>1 Domain Free</li>
-              <li><i class="far fa-check-circle dark-blue mr-2"></i>Enhanced Security</li>
-            </ul>
-            <div class="buy-button mt-2">
-              <button type="button" name="button">Buy Now</button>
-            </div>
-            <p class="mt-1">*No credit card required</p>
-          </div>
-          <div class="buy-card">
-            <span class="dark-blue">Basic</span>
-            <h2 class="mt-2">$9.00</h2>
-            <p>Per Month</p>
-            <p class="mt-1">All the basics for businesses that are just getting started.</p>
-            <hr class="mb-2">
-            <ul>
-              <li><i class="far fa-check-circle dark-blue mr-2"></i>Full Access</li>
-              <li><i class="far fa-check-circle dark-blue mr-2"></i>Enhanced Security</li>
-              <li><i class="far fa-check-circle dark-blue mr-2"></i>Source Files</li>
-              <li><i class="far fa-check-circle dark-blue mr-2"></i>1 Domain Free</li>
-              <li><i class="far fa-check-circle dark-blue mr-2"></i>Enhanced Security</li>
+              <li v-for="list in buy_list"><i :class="list.icon" class="dark-blue mr-2"></i>{{list.list}}</li>
             </ul>
             <div class="buy-button mt-2">
               <button type="button" name="button">Buy Now</button>

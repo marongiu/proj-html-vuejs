@@ -76,6 +76,40 @@ var app = new Vue({
       paragraph: 'Composed in a pseudo-Latin language which more or less corresponds.',
       anchor: 'Read More >',
       icon: 'fas fa-expand-arrows-alt'
+    }],
+    // Sezione card buy
+    section_buy: [{
+      type: 'Basic',
+      price: '$9.00',
+      time: 'Per Month',
+      description: 'All the basics for businesses that are just getting started.'
+    }, {
+      type: 'Business',
+      price: '$39.00',
+      time: 'Per Month',
+      description: 'Better for growing businesses that want more customers.'
+    }, {
+      type: 'Enterprise',
+      price: '$79.00',
+      time: 'Per Month',
+      description: 'Advanced features for pros who need more customization.'
+    }],
+    // Sezione lista card
+    buy_list: [{
+      icon: 'far fa-check-circle',
+      list: 'Full Access'
+    }, {
+      icon: 'far fa-check-circle',
+      list: 'Enhanced Security'
+    }, {
+      icon: 'far fa-check-circle',
+      list: 'Source Files'
+    }, {
+      icon: 'far fa-check-circle',
+      list: '1 Domain Free'
+    }, {
+      icon: 'far fa-check-circle',
+      list: 'Enhanced Security'
     }]
   },
   mounted: function mounted() {
