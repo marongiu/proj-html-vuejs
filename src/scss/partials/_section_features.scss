@@ -1,3 +1,32 @@
 .features {
   margin-top: $mg-100;
+  h2 {
+    font-size: 30px;
+  }
+  p {
+    margin-top: $mg-2;
+    color: $grey;
+    font-weight: 400;
+  }
+}
+
+.card-container {
+  margin-top: $mg-5;
+  @include flex(center,space-between,nowrap);
+  .card {
+    margin-right: $mg-2;
+    box-shadow:  0 0 3px rgba(60,72,88,0.15);
+    padding: $pd-2;
+
+    .icon {
+      @include flex(center,center,nowrap);
+      padding: $pd-2;
+      width: 70px;
+      height: 70px;
+      border-radius: 10px;
+      background-color: $social-background;
+      color: $dark-blue;
+      font-size: 20px;
+    }
+  }
 }
