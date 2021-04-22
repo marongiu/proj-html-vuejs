@@ -2,4 +2,63 @@ main {
 
   @import '_section_features.scss';
   @import '_section_quickstart.scss';
+  // section build tools
+
+  .tools {
+    @include flex(center,space-between,nowrap);
+    margin-top: $mg-150;
+    .tools-title {
+      font-weight: 400;
+      h2 {
+        font-size: 30px;
+      }
+      ul {
+        margin: $mg-3 0;
+        li {
+          font-size: 16px;
+          padding: 3px 0;
+        }
+      }
+
+      a {
+        background: $dark-blue;
+        color: $white;
+        padding: $pd-1 $pd-2;
+        border-radius: 5px;
+        font-weight: bold;
+        &:hover {
+          transition: 0.5s;
+          background: $hover-blue;
+        }
+      }
+    }
+    .tools-image {
+      width: 70%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  // Sezione Rates
+  .landrick-rates {
+    @include flex(center,center,nowrap);
+    .landrick-rates-title {
+      text-align: center;
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+
+  // Sezione buy
+
+  .buy-card-container {
+    @include flex(center,space-between,nowrap);
+    .buy-card {
+      margin-right: $mg-3;
+      box-shadow:  0 0 3px rgba(60,72,88,0.15);
+      padding: $pd-2;
+    }
+  }
 }

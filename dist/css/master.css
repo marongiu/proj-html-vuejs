@@ -44,6 +44,10 @@ a {
   margin-top: 20px;
 }
 
+.mt-100 {
+  margin-top: 100px;
+}
+
 .mt-3 {
   margin-top: 30px;
 }
@@ -54,6 +58,10 @@ a {
 
 .mt-5 {
   margin-top: 50px;
+}
+
+.mr-2 {
+  margin-right: 20px;
 }
 
 .mr-4 {
@@ -326,4 +334,64 @@ main .quickstart-npm ul li:first-child {
 }
 main .quickstart-npm p {
   color: #8492A6;
+}
+main .tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-top: 150px;
+}
+main .tools .tools-title {
+  font-weight: 400;
+}
+main .tools .tools-title h2 {
+  font-size: 30px;
+}
+main .tools .tools-title ul {
+  margin: 30px 0;
+}
+main .tools .tools-title ul li {
+  font-size: 16px;
+  padding: 3px 0;
+}
+main .tools .tools-title a {
+  background: #2F55D4;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+main .tools .tools-title a:hover {
+  transition: 0.5s;
+  background: #2443ac;
+}
+main .tools .tools-image {
+  width: 70%;
+}
+main .tools .tools-image img {
+  width: 100%;
+}
+main .landrick-rates {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+main .landrick-rates .landrick-rates-title {
+  text-align: center;
+}
+main .landrick-rates .landrick-rates-title h2 {
+  font-size: 30px;
+}
+main .buy-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+main .buy-card-container .buy-card {
+  margin-right: 30px;
+  box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
+  padding: 20px;
 }

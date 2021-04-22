@@ -73,19 +73,19 @@ var app = new Vue({
         icon: 'fab fa-dropbox'
       },
       {
-        title: 'Modular',
+        title: 'Responsive',
         paragraph: 'Composed in a pseudo-Latin language which more or less corresponds.',
         anchor: 'Read More >',
         icon: 'fas fa-desktop'
       },
       {
-        title: 'Modular',
+        title: 'Customizable',
         paragraph: 'Composed in a pseudo-Latin language which more or less corresponds.',
         anchor: 'Read More >',
         icon: 'fas fa-paint-brush'
       },
       {
-        title: 'Modular',
+        title: 'Scalable',
         paragraph: 'Composed in a pseudo-Latin language which more or less corresponds.',
         anchor: 'Read More >',
         icon: 'fas fa-expand-arrows-alt'
