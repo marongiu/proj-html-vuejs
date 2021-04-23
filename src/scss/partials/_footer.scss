@@ -1,21 +1,58 @@
 footer {
+  font-weight: 400;
   background: $footer-background;
   .container {
-    @include flex(center,space-between,nowrap);
+    padding-top: 50px;
     .landrick-social {
-      padding-top: $pd-5;
       img {
         width: 150px;
       }
-
       ul {
+        display: flex;
+        align-items: center;
         li {
-          display: inline-block;
+          @include flex(center,center,nowrap);
+          color: $light-grey;
+          margin: 0 $mg-0_5;
+          padding: $pd-1;
+          border-radius: 8px;
+          width: 30px;
+          height: 30px;
+          border: 1px solid #3c4858;
         }
       }
     }
     .landrick-company {
-      padding-top: $pd-5;
+      ul {
+        color: $light-grey;
+        li {
+          h3 {
+            color: $white;
+          }
+          a {
+            color: $light-grey;
+            margin: $mg-0_5 0;
+          }
+        }
+      }
+    }
+
+    .landrick-usefull {
+      ul {
+        color: $light-grey;
+        li {
+          h3 {
+            color: $white;
+          }
+          a {
+            color: $light-grey;
+            margin: $mg-0_5 0;
+          }
+        }
+      }
+    }
+
+    .landrick-newsletter {
     }
   }
 }

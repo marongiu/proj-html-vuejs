@@ -8,7 +8,6 @@
 body {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
-  height: 10000px;
 }
 
 ul {
@@ -478,23 +477,49 @@ main .work-information .work-form button:hover {
 }
 
 footer {
+  font-weight: 400;
   background: #202942;
 }
 footer .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-}
-footer .container .landrick-social {
   padding-top: 50px;
 }
 footer .container .landrick-social img {
   width: 150px;
 }
-footer .container .landrick-social ul li {
-  display: inline-block;
+footer .container .landrick-social ul {
+  display: flex;
+  align-items: center;
 }
-footer .container .landrick-company {
-  padding-top: 50px;
+footer .container .landrick-social ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  color: #ADB5BD;
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #3c4858;
+}
+footer .container .landrick-company ul {
+  color: #ADB5BD;
+}
+footer .container .landrick-company ul li h3 {
+  color: #fff;
+}
+footer .container .landrick-company ul li a {
+  color: #ADB5BD;
+  margin: 5px 0;
+}
+footer .container .landrick-usefull ul {
+  color: #ADB5BD;
+}
+footer .container .landrick-usefull ul li h3 {
+  color: #fff;
+}
+footer .container .landrick-usefull ul li a {
+  color: #ADB5BD;
+  margin: 5px 0;
 }

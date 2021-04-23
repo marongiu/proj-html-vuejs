@@ -125,6 +125,8 @@ var app = new Vue({
         icon: 'fab fa-linkedin-in'
       }],
       companylist: [{
+        title: 'Company'
+      }, {
         icon: 'fas fa-angle-right',
         subtitle: 'About us'
       }, {
@@ -144,10 +146,35 @@ var app = new Vue({
         subtitle: 'Careers'
       }, {
         icon: 'fas fa-angle-right',
-        subtitle: ' Blog'
+        subtitle: 'Blog'
       }, {
         icon: 'fas fa-angle-right',
         subtitle: 'Login'
+      }],
+      usefull_link: [{
+        title: 'Usefull Links'
+      }, {
+        icon: 'fas fa-angle-right',
+        subtitle: 'Terms of Services'
+      }, {
+        icon: 'fas fa-angle-right',
+        subtitle: 'Privacy Policy'
+      }, {
+        icon: 'fas fa-angle-right',
+        subtitle: 'Documentation'
+      }, {
+        icon: 'fas fa-angle-right',
+        subtitle: 'Changelog'
+      }, {
+        icon: 'fas fa-angle-right',
+        subtitle: 'Components'
+      }],
+      newsletter: [{
+        title: 'Newsletter',
+        paragraph: 'Sign up and receive the latest tips via email.',
+        email_title: 'Write your email *',
+        placeholder: 'Your Email :',
+        button: 'Subscribe'
       }]
     }]
   },
