@@ -1,6 +1,7 @@
 var app = new Vue({
   el: '#root',
   data: {
+    email: '',
     // Scritte navbar centrali
     navbar_center: [
       {
@@ -222,8 +223,9 @@ var app = new Vue({
             title: 'Newsletter',
             paragraph: 'Sign up and receive the latest tips via email.',
             email_title: 'Write your email *',
-            placeholder: 'Your Email :',
-            button: 'Subscribe'
+            placeholder: '         Your Email :',
+            button: 'Subscribe',
+            iconmessage: 'far fa-envelope'
           }
         ]
       }

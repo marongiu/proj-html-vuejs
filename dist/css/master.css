@@ -68,6 +68,10 @@ h2 {
   margin-top: 50px;
 }
 
+.mr-1 {
+  margin-right: 10px;
+}
+
 .mr-2 {
   margin-right: 20px;
 }
@@ -503,15 +507,24 @@ footer .container .landrick-social ul li {
   height: 30px;
   border: 1px solid #3c4858;
 }
+footer .container .landrick-social ul li:hover {
+  cursor: pointer;
+  transition: 1s;
+  border: none;
+  background: #eb0e11;
+  color: #fff;
+}
 footer .container .landrick-company ul {
   color: #ADB5BD;
 }
 footer .container .landrick-company ul li h3 {
   color: #fff;
 }
+footer .container .landrick-company ul li:not(:first-child) {
+  margin: 10px 0;
+}
 footer .container .landrick-company ul li a {
   color: #ADB5BD;
-  margin: 5px 0;
 }
 footer .container .landrick-usefull ul {
   color: #ADB5BD;
@@ -519,7 +532,61 @@ footer .container .landrick-usefull ul {
 footer .container .landrick-usefull ul li h3 {
   color: #fff;
 }
+footer .container .landrick-usefull ul li:not(:first-child) {
+  margin: 10px 0;
+}
 footer .container .landrick-usefull ul li a {
   color: #ADB5BD;
   margin: 5px 0;
+}
+footer .container .landrick-newsletter h3 {
+  color: white;
+}
+footer .container .landrick-newsletter .landrick-subscribe {
+  display: flex;
+  flex-direction: column;
+}
+footer .container .landrick-newsletter .landrick-subscribe .input-form {
+  position: relative;
+}
+footer .container .landrick-newsletter .landrick-subscribe .input-form i {
+  top: 22px;
+  z-index: 1;
+  position: absolute;
+  color: #adb5bd;
+  margin-left: 10px;
+}
+footer .container .landrick-newsletter .landrick-subscribe .input-form input {
+  border-radius: 7px;
+  position: relative;
+  padding-left: 10px;
+  height: 40px;
+  width: 100%;
+  min-width: 200px;
+  color: #adb5bd;
+  background: #27314f;
+  border: none;
+}
+footer .container .landrick-newsletter .landrick-subscribe .input-form input::-moz-placeholder {
+  opacity: 1;
+}
+footer .container .landrick-newsletter .landrick-subscribe .input-form input:-ms-input-placeholder {
+  opacity: 1;
+}
+footer .container .landrick-newsletter .landrick-subscribe .input-form input::placeholder {
+  opacity: 1;
+}
+footer .container .landrick-newsletter .landrick-subscribe button {
+  font-weight: bold;
+  color: #e94649;
+  border-radius: 7px;
+  height: 40px;
+  background: rgba(255, 91, 105, 0.1);
+  border: 1px solid rgba(47, 85, 212, 0.1);
+  box-shadow: 0 3px 5px 0 rgba(255, 91, 105, 0.3);
+}
+footer .container .landrick-newsletter .landrick-subscribe button:hover {
+  cursor: pointer;
+  background: #e94649;
+  color: #fff;
 }

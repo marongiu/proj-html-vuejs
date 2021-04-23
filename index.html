@@ -174,8 +174,8 @@
           <div class="col-4">
             <div class="landrick-social">
               <img :src="footer.logo" alt="">
-              <p class="grey">{{footer.paragraph}}</p>
-              <ul>
+              <p class="grey mt-2">{{footer.paragraph}}</p>
+              <ul class="mt-2">
                 <!-- Lista network -->
                 <li v-for="social in footer.social"><i :class="social.icon"></i></li>
               </ul>
@@ -210,11 +210,14 @@
             <div class="col-3">
               <div class="landrick-newsletter" v-for="newsletter in footer.newsletter">
                 <h3>{{newsletter.title}}</h3>
-                <p>{{newsletter.paragraph}}</p>
-                <div class="landrick-subscribe">
-                  <p>{{newsletter.email_title}}</p>
-                  <input type="text" :placeholder="newsletter.placeholder">
-                  <button>{{newsletter.button}}</button>
+                <p class="grey mt-2">{{newsletter.paragraph}}</p>
+                <div class="landrick-subscribe mt-2">
+                  <p class="grey">{{newsletter.email_title}}</p>
+                  <div class="input-form mt-1">
+                    <i v-if="!email.length" :class="newsletter.iconmessage"></i>
+                    <input class="mt-1" type="text" :placeholder="newsletter.placeholder" v-model="email">
+                  </div>
+                  <button class="mt-1" >{{newsletter.button}}</button>
                 </div>
               </div>
             </div>

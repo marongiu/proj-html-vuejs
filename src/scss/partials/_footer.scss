@@ -19,6 +19,14 @@ footer {
           width: 30px;
           height: 30px;
           border: 1px solid #3c4858;
+          &:hover {
+            // mixin
+            cursor: pointer;
+            transition: 1s;
+            border: none;
+            background: $hover-blue;
+            color: $white;
+          }
         }
       }
     }
@@ -29,9 +37,11 @@ footer {
           h3 {
             color: $white;
           }
+          &:not(:first-child) {
+            margin: 10px 0;
+          }
           a {
             color: $light-grey;
-            margin: $mg-0_5 0;
           }
         }
       }
@@ -44,6 +54,11 @@ footer {
           h3 {
             color: $white;
           }
+
+          &:not(:first-child) {
+            margin: 10px 0;
+          }
+
           a {
             color: $light-grey;
             margin: $mg-0_5 0;
@@ -53,6 +68,55 @@ footer {
     }
 
     .landrick-newsletter {
+      h3 {
+        color: white;
+      }
+
+      .landrick-subscribe {
+        display: flex;
+        flex-direction: column;
+
+        .input-form {
+          position: relative;
+          i {
+            top: 22px;
+            z-index: 1;
+            position: absolute;
+            color: $trasparent-grey;
+            margin-left: $mg-1;
+          }
+          input {
+            border-radius: 7px;
+            position: relative;
+            padding-left: $pd-1;
+            height: 40px;
+            width: 100%;
+            min-width: 200px;
+            color: $trasparent-grey;
+            background: $input-background;
+            border: none;
+            &::placeholder {
+              opacity: 1;
+            }
+
+          }
+
+        }
+        button {
+          font-weight: bold;
+          color: $dark-blue;
+          border-radius: 7px;
+          height: 40px;
+          background: $red-button-footer;
+          border: 1px solid $border-button-footer;
+          box-shadow: 0 3px 5px 0 $box-shadow-button-footer;
+          &:hover {
+            cursor: pointer;
+            background: $dark-blue;
+            color: $white;
+          }
+        }
+      }
     }
   }
 }
