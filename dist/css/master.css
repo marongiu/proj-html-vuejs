@@ -511,7 +511,7 @@ footer .container .landrick-social ul li:hover {
   cursor: pointer;
   transition: 1s;
   border: none;
-  background: #eb0e11;
+  background: #e94649;
   color: #fff;
 }
 footer .container .landrick-company ul {
@@ -526,6 +526,9 @@ footer .container .landrick-company ul li:not(:first-child) {
 footer .container .landrick-company ul li a {
   color: #ADB5BD;
 }
+footer .container .landrick-company ul li a:hover {
+  color: #e94649;
+}
 footer .container .landrick-usefull ul {
   color: #ADB5BD;
 }
@@ -538,6 +541,9 @@ footer .container .landrick-usefull ul li:not(:first-child) {
 footer .container .landrick-usefull ul li a {
   color: #ADB5BD;
   margin: 5px 0;
+}
+footer .container .landrick-usefull ul li a:hover {
+  color: #e94649;
 }
 footer .container .landrick-newsletter h3 {
   color: white;
@@ -586,7 +592,30 @@ footer .container .landrick-newsletter .landrick-subscribe button {
   box-shadow: 0 3px 5px 0 rgba(255, 91, 105, 0.3);
 }
 footer .container .landrick-newsletter .landrick-subscribe button:hover {
+  transition: 1s;
   cursor: pointer;
   background: #e94649;
   color: #fff;
+}
+footer .credits {
+  border-top: 1px solid rgba(173, 181, 189, 0.2);
+  padding-bottom: 40px;
+}
+footer .credits .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+footer .credits .copyright hr {
+  border: 0;
+  height: 1px;
+  background: #adb5bd;
+}
+footer .credits .copyright i {
+  color: #e43f52;
+}
+footer .credits .copyright .copyright-card img {
+  max-width: 35px;
+  margin-right: 5px;
 }

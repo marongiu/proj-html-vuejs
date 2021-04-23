@@ -24,7 +24,7 @@ footer {
             cursor: pointer;
             transition: 1s;
             border: none;
-            background: $hover-blue;
+            background: $dark-blue;
             color: $white;
           }
         }
@@ -42,6 +42,9 @@ footer {
           }
           a {
             color: $light-grey;
+            &:hover {
+              color: $dark-blue;
+            }
           }
         }
       }
@@ -62,6 +65,10 @@ footer {
           a {
             color: $light-grey;
             margin: $mg-0_5 0;
+
+            &:hover {
+              color: $dark-blue;
+            }
           }
         }
       }
@@ -111,10 +118,34 @@ footer {
           border: 1px solid $border-button-footer;
           box-shadow: 0 3px 5px 0 $box-shadow-button-footer;
           &:hover {
+            transition: 1s;
             cursor: pointer;
             background: $dark-blue;
             color: $white;
           }
+        }
+      }
+    }
+  }
+
+  .credits {
+    border-top: 1px solid rgba(173, 181, 189,0.2);
+    padding-bottom: $pd-4 ;
+    .copyright {
+      @include flex(center,space-between,nowrap);
+      hr {
+        border: 0;
+        height: 1px;
+        background: $trasparent-grey;
+      }
+      i {
+        color: #e43f52;
+      }
+
+      .copyright-card {
+        img {
+          max-width: 35px;
+          margin-right: 5px;
         }
       }
     }

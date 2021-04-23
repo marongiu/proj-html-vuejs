@@ -168,7 +168,7 @@
           </div>
         </div>
       </main>
-<!-- Inizio footer a colonne -->
+      <!-- Inizio footer a colonne -->
       <footer v-for="footer in footer">
         <div class="container">
           <div class="col-4">
@@ -182,47 +182,61 @@
             </div>
           </div>
           <!-- Lista company -->
-            <div class="col-2">
-              <div class="landrick-company">
-                <ul>
-                  <li v-for="company in footer.companylist">
-                    <h3>{{company.title}}</h3>
-                    <i v-if="(company.icon)" class="mr-1" :class="company.icon"></i>
-                    <a href="">{{company.subtitle}}</a>
-                  </li>
-                </ul>
-              </div>
+          <div class="col-2">
+            <div class="landrick-company">
+              <ul>
+                <li v-for="company in footer.companylist">
+                  <h3>{{company.title}}</h3>
+                  <i v-if="(company.icon)" class="mr-1" :class="company.icon"></i>
+                  <a href="">{{company.subtitle}}</a>
+                </li>
+              </ul>
             </div>
-            <!-- Lista useful Link -->
-            <div class="col-3">
-              <div class="landrick-usefull">
-                <ul>
-                  <li v-for="usefull in footer.usefull_link">
-                    <h3>{{usefull.title}}</h3>
-                    <i v-if="(usefull.icon)" class="mr-1" :class="usefull.icon"></i>
-                    <a href="">{{usefull.subtitle}}</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Newsletter -->
-            <div class="col-3">
-              <div class="landrick-newsletter" v-for="newsletter in footer.newsletter">
-                <h3>{{newsletter.title}}</h3>
-                <p class="grey mt-2">{{newsletter.paragraph}}</p>
-                <div class="landrick-subscribe mt-2">
-                  <p class="grey">{{newsletter.email_title}}</p>
-                  <div class="input-form mt-1">
-                    <i v-if="!email.length" :class="newsletter.iconmessage"></i>
-                    <input class="mt-1" type="text" :placeholder="newsletter.placeholder" v-model="email">
-                  </div>
-                  <button class="mt-1" >{{newsletter.button}}</button>
-                </div>
-              </div>
-            </div>
-
           </div>
+          <!-- Lista useful Link -->
+          <div class="col-3">
+            <div class="landrick-usefull">
+              <ul>
+                <li v-for="usefull in footer.usefull_link">
+                  <h3>{{usefull.title}}</h3>
+                  <i v-if="(usefull.icon)" class="mr-1" :class="usefull.icon"></i>
+                  <a href="">{{usefull.subtitle}}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-3">
+            <div class="landrick-newsletter" v-for="newsletter in footer.newsletter">
+              <h3>{{newsletter.title}}</h3>
+              <p class="grey mt-2">{{newsletter.paragraph}}</p>
+              <div class="landrick-subscribe mt-2">
+                <p class="grey">{{newsletter.email_title}}</p>
+                <div class="input-form mt-1">
+                  <i v-if="!email.length" :class="newsletter.iconmessage"></i>
+                  <input class="mt-1" type="text" :placeholder="newsletter.placeholder" v-model="email">
+                </div>
+                <button class="mt-1" >{{newsletter.button}}</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="credits mt-4">
+          <div class="container">
+            <div class="copyright" v-for="copyright in footer.copyright">
+              <!-- Crediti -->
+              <div class="copyright-title">
+                <p class="grey" v-html="copyright.title"></p>
+              </div>
+              <!-- Immagini carte credito -->
+              <div class="copyright-card">
+                <img :src="image.card" alt="carte" v-for="image in copyright.images">
+              </div>
+            </div>
+          </div>
+        </div>
 
       </footer>
     </div>

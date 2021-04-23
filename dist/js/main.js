@@ -177,6 +177,20 @@ var app = new Vue({
         placeholder: '         Your Email :',
         button: 'Subscribe',
         iconmessage: 'far fa-envelope'
+      }],
+      copyright: [{
+        title: '© 2021 Landrick. Design with <i class="fas fa-heart"></i> by Shreethemes.',
+        images: [{
+          card: './dist/img/american-ex.png'
+        }, {
+          card: './dist/img/discover.png'
+        }, {
+          card: './dist/img/master-card.png'
+        }, {
+          card: './dist/img/paypal.png'
+        }, {
+          card: './dist/img/visa.png'
+        }]
       }]
     }]
   },
