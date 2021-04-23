@@ -72,8 +72,20 @@
     }
     button {
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 2px;
+      right: 1px;
+      padding: 11px 25px;
+      border-radius: 30px;
+      font-size: 14px;
+      border: none;
+      background: $dark-blue;
+      color: $white;
+      font-weight: bold;
+      cursor: pointer;
+      &:hover {
+        transition: 1s;
+        background: $hover-blue;
+      }
     }
   }
 }

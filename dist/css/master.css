@@ -29,7 +29,7 @@ h2 {
 }
 
 .dark-blue {
-  color: #2F55D4;
+  color: #e94649;
   font-weight: bold;
 }
 
@@ -108,7 +108,7 @@ header nav ul#link-center li a {
   font-size: 13px;
 }
 header nav ul#link-center li a:hover {
-  color: #2F55D4;
+  color: #e94649;
   font-weight: bold;
 }
 header nav ul#link-center li i {
@@ -130,7 +130,7 @@ header nav ul#link-right li a:first-child {
   margin-right: 2px;
 }
 header nav ul#link-right li:not(:first-child) a {
-  color: #2F55D4;
+  color: #e94649;
   padding: 7px 10px;
   background: #2F55D41A;
   border-radius: 7px;
@@ -138,7 +138,7 @@ header nav ul#link-right li:not(:first-child) a {
 }
 header nav ul#link-right li:not(:first-child) a:hover {
   transition: 0.7s;
-  background: #2F55D4;
+  background: #e94649;
   color: #fff;
   box-shadow: none;
 }
@@ -163,7 +163,7 @@ header nav ul#link-right li:not(:first-child) a i {
   padding: 2px 8px;
   border-radius: 15px;
   font-size: 13px;
-  color: #2F55D4;
+  color: #e94649;
 }
 .jumbotron .jumbotron-title section#jumbotron-title-info h1 {
   font-size: 43px;
@@ -179,26 +179,26 @@ header nav ul#link-right li:not(:first-child) a i {
 }
 .jumbotron .jumbotron-title section#jumbotron-button a {
   background: #fff;
-  color: #2F55D4;
+  color: #e94649;
   padding: 10px 20px;
   border-radius: 5px;
   margin-right: 5px;
-  border: 1px solid #2F55D4;
+  border: 1px solid #e94649;
 }
 .jumbotron .jumbotron-title section#jumbotron-button a:hover {
-  background: #2F55D4;
+  background: #e94649;
   color: #fff;
   transition: 1.2s;
 }
 .jumbotron .jumbotron-title section#jumbotron-button a:first-child {
-  background: #2F55D4;
+  background: #e94649;
   color: #fff;
   border: none;
 }
 .jumbotron .jumbotron-title section#jumbotron-button a:first-child:hover {
   background: #fff;
-  color: #2F55D4;
-  border: 1px solid #2F55D4;
+  color: #e94649;
+  border: 1px solid #e94649;
 }
 .jumbotron .jumbotron-title section#jumbotron-button p {
   font-weight: 400;
@@ -280,7 +280,7 @@ main .card-container .card .icon {
   height: 60px;
   border-radius: 7px;
   background-color: #2F55D41A;
-  color: #2F55D4;
+  color: #e94649;
   font-size: 20px;
 }
 main .card-container .card h3 {
@@ -291,7 +291,7 @@ main .card-container .card p {
   color: #8492A6;
 }
 main .card-container .card a {
-  color: #2F55D4;
+  color: #e94649;
 }
 main .quickstart {
   margin-top: 100px;
@@ -356,7 +356,7 @@ main .tools .tools-title ul li {
   padding: 3px 0;
 }
 main .tools .tools-title a {
-  background: #2F55D4;
+  background: #e94649;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -398,7 +398,7 @@ main .buy-card-container .buy-card {
 main .buy-card-container .buy-card:hover {
   cursor: pointer;
   transition: 1.2s;
-  border-bottom: 5px solid #2F55D4;
+  border-bottom: 5px solid #e94649;
   transform: scale(1.03);
 }
 main .buy-card-container .buy-card h2 {
@@ -412,7 +412,7 @@ main .buy-card-container .buy-card hr {
 main .buy-card-container .buy-card span {
   padding: 10px 20px;
   background: #2F55D41A;
-  color: #2F55D4;
+  color: #e94649;
   border: 1px solid #dde4f9;
   border-radius: 20px;
 }
@@ -423,7 +423,7 @@ main .buy-card-container .buy-card .buy-button {
   width: 100%;
 }
 main .buy-card-container .buy-card .buy-button button {
-  background: #2F55D4;
+  background: #e94649;
   color: #fff;
   width: 100%;
   height: 50px;
@@ -461,6 +461,18 @@ main .work-information .work-form input::placeholder {
 }
 main .work-information .work-form button {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 2px;
+  right: 1px;
+  padding: 11px 25px;
+  border-radius: 30px;
+  font-size: 14px;
+  border: none;
+  background: #e94649;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+main .work-information .work-form button:hover {
+  transition: 1s;
+  background: #2443ac;
 }
