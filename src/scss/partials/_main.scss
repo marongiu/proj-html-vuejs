@@ -52,9 +52,17 @@ main {
     .buy-card {
       color: $grey;
       margin-right: $mg-3;
-      box-shadow:  0 0 3px rgba(60,72,88,0.15);
+      box-shadow: 0 0 2px $light-grey;
+      border-bottom: 5px solid $light-grey;
       padding: $pd-2;
       border-radius: 10px;
+
+        &:hover {
+          cursor: pointer;
+          transition: 1.2s;
+          border-bottom: 5px solid $dark-blue;
+          transform: scale(1.03);
+        }
 
       h2 {
         color: black;

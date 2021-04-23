@@ -389,9 +389,16 @@ main .buy-card-container {
 main .buy-card-container .buy-card {
   color: #8492A6;
   margin-right: 30px;
-  box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
+  box-shadow: 0 0 2px #ADB5BD;
+  border-bottom: 5px solid #ADB5BD;
   padding: 20px;
   border-radius: 10px;
+}
+main .buy-card-container .buy-card:hover {
+  cursor: pointer;
+  transition: 1.2s;
+  border-bottom: 5px solid #2F55D4;
+  transform: scale(1.03);
 }
 main .buy-card-container .buy-card h2 {
   color: black;
