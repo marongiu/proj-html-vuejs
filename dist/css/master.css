@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
   box-sizing: border-box;
 }
 
@@ -87,7 +88,7 @@ header nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 header nav #logo img {
   max-width: 140px;
@@ -429,4 +430,37 @@ main .buy-card-container .buy-card .buy-button button {
   border: none;
   border-radius: 10px;
   font-weight: bold;
+}
+main .work-information {
+  margin: 100px auto;
+  text-align: center;
+  width: 50%;
+}
+main .work-information .work-form {
+  margin-top: 30px;
+  position: relative;
+}
+main .work-information .work-form input {
+  padding: 12px 20px;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  border: 1px solid #e9ecef;
+}
+main .work-information .work-form input::-moz-placeholder {
+  font-size: 15px;
+  color: black;
+}
+main .work-information .work-form input:-ms-input-placeholder {
+  font-size: 15px;
+  color: black;
+}
+main .work-information .work-form input::placeholder {
+  font-size: 15px;
+  color: black;
+}
+main .work-information .work-form button {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

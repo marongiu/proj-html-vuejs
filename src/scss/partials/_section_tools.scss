@@ -1,0 +1,40 @@
+.tools {
+  @include flex(center,space-between,nowrap);
+  margin-top: $mg-150;
+  .tools-title {
+    font-weight: 400;
+    ul {
+      margin: $mg-3 0;
+      li {
+        font-size: 16px;
+        padding: 3px 0;
+      }
+    }
+
+    a {
+      background: $dark-blue;
+      color: $white;
+      padding: $pd-1 $pd-2;
+      border-radius: 5px;
+      font-weight: bold;
+      &:hover {
+        transition: 0.5s;
+        background: $hover-blue;
+      }
+    }
+  }
+  .tools-image {
+    width: 70%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// Sezione Rates
+.landrick-rates {
+  @include flex(center,center,nowrap);
+  .landrick-rates-title {
+    text-align: center;
+  }
+}

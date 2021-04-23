@@ -5,7 +5,7 @@ header {
   border-bottom-left-radius: 10%;
   nav {
     @include flex(center, space-between, nowrap);
-    padding-top: $pd-2;
+    padding-top: $pd-3;
     #logo img{
       max-width: 140px;
     }

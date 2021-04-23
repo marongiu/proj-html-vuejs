@@ -1,0 +1,79 @@
+.buy-card-container {
+  @include flex(center,space-between,nowrap);
+  .buy-card {
+    color: $grey;
+    margin-right: $mg-3;
+    box-shadow: 0 0 2px $light-grey;
+    border-bottom: 5px solid $light-grey;
+    padding: $pd-2;
+    border-radius: 10px;
+
+    &:hover {
+      cursor: pointer;
+      transition: 1.2s;
+      border-bottom: 5px solid $dark-blue;
+      transform: scale(1.03);
+    }
+
+    h2 {
+      color: black;
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background: $light-grey;
+    }
+    span {
+      padding: $pd-1 $pd-2;
+      background: $social-background;
+      color: $dark-blue;
+      border: 1px solid $border-blue;
+      border-radius: 20px;
+    }
+
+    ul {
+      li {
+        padding: 5px 0;
+      }
+    }
+    .buy-button {
+      width: 100%;
+      button {
+        background: $dark-blue;
+        color: $white;
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.work-information {
+  margin: $mg-100 auto;
+  text-align: center;
+  width: 50%;
+
+  .work-form {
+    margin-top: $mg-3;
+    position: relative;
+    input {
+      padding: 12px 20px;
+      width: 100%;
+      border-radius: 30px;
+      border: none;
+      border: 1px solid #e9ecef;
+      &::placeholder {
+        font-size: 15px;
+        color: black;
+      }
+    }
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
