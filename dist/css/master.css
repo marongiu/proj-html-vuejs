@@ -364,7 +364,7 @@ main .tools .tools-title a {
 }
 main .tools .tools-title a:hover {
   transition: 0.5s;
-  background: #2443ac;
+  background: #eb0e11;
 }
 main .tools .tools-image {
   width: 70%;
@@ -474,5 +474,5 @@ main .work-information .work-form button {
 }
 main .work-information .work-form button:hover {
   transition: 1s;
-  background: #2443ac;
+  background: #eb0e11;
 }
