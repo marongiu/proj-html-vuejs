@@ -168,8 +168,21 @@
         </div>
       </main>
 <!-- Inizio footer -->
-      <footer>
-
+      <footer v-for="footer in footer">
+        <div class="container">
+          <div class="landrick-social">
+            <img :src="footer.logo" alt="">
+            <p class="grey">{{footer.paragraph}}</p>
+            <ul>
+              <li v-for="social in footer.social"><i :class="social.icon"></i></li>
+            </ul>
+          </div>
+          <div class="landrick-company">
+            <ul>
+              <li v-for="company in footer.companylist"><i :class="company.icon"></i>{{company.subtitle}}</li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div>
 

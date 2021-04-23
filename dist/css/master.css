@@ -476,3 +476,25 @@ main .work-information .work-form button:hover {
   transition: 1s;
   background: #eb0e11;
 }
+
+footer {
+  background: #202942;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+footer .container .landrick-social {
+  padding-top: 50px;
+}
+footer .container .landrick-social img {
+  width: 150px;
+}
+footer .container .landrick-social ul li {
+  display: inline-block;
+}
+footer .container .landrick-company {
+  padding-top: 50px;
+}

@@ -1,0 +1,21 @@
+footer {
+  background: $footer-background;
+  .container {
+    @include flex(center,space-between,nowrap);
+    .landrick-social {
+      padding-top: $pd-5;
+      img {
+        width: 150px;
+      }
+
+      ul {
+        li {
+          display: inline-block;
+        }
+      }
+    }
+    .landrick-company {
+      padding-top: $pd-5;
+    }
+  }
+}

@@ -15,7 +15,7 @@
   @include flex(center,space-between,nowrap);
   .card {
     margin-right: $mg-2;
-    box-shadow:  0 0 3px rgba(60,72,88,0.15);
+    box-shadow:  0 0 3px $box-shadow-card;
     padding: $pd-2;
     font-weight: 400;
 
@@ -23,7 +23,7 @@
         cursor: pointer;
         transform: translateY(-20px);
         transition: 2s;
-        box-shadow: 5px 5px 5px 5px rgba(60,72,88,0.20);
+        box-shadow: 5px 5px 5px 5px $box-shadow-card-hover;
       }
 
     .icon {

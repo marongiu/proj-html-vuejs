@@ -110,6 +110,45 @@ var app = new Vue({
     }, {
       icon: 'far fa-check-circle',
       list: 'Enhanced Security'
+    }],
+    // Footer
+    footer: [{
+      logo: './dist/img/logo-light.png',
+      paragraph: 'Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.',
+      social: [{
+        icon: 'fab fa-facebook-f'
+      }, {
+        icon: 'fab fa-instagram'
+      }, {
+        icon: 'fab fa-twitter'
+      }, {
+        icon: 'fab fa-linkedin-in'
+      }],
+      companylist: [{
+        icon: 'fas fa-angle-right',
+        subtitle: 'About us'
+      }, {
+        icon: 'fas fa-angle-right',
+        subtitle: 'Services'
+      }, {
+        icon: 'fas fa-angle-right',
+        subtitle: 'Team'
+      }, {
+        icon: 'fas fa-angle-right',
+        subtitle: 'Pricing'
+      }, {
+        icon: 'fas fa-angle-right',
+        subtitle: 'Project'
+      }, {
+        icon: 'fas fa-angle-right',
+        subtitle: 'Careers'
+      }, {
+        icon: 'fas fa-angle-right',
+        subtitle: ' Blog'
+      }, {
+        icon: 'fas fa-angle-right',
+        subtitle: 'Login'
+      }]
     }]
   },
   mounted: function mounted() {
