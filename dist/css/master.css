@@ -83,8 +83,6 @@ h2 {
 header {
   background: #F8F9FC;
   padding-bottom: 50px;
-  border-bottom-right-radius: 10%;
-  border-bottom-left-radius: 10%;
 }
 header nav {
   display: flex;
@@ -95,6 +93,9 @@ header nav {
 }
 header nav #logo img {
   max-width: 140px;
+}
+header nav .mobile-hamburger {
+  display: none;
 }
 header nav ul#link-center {
   display: flex;
@@ -584,6 +585,9 @@ footer .container .landrick-social ul li a:hover {
 footer .container .landrick-company ul {
   color: #ADB5BD;
 }
+footer .container .landrick-company ul li i {
+  padding-right: 3px;
+}
 footer .container .landrick-company ul li h3 {
   color: #fff;
 }
@@ -598,6 +602,9 @@ footer .container .landrick-company ul li a:hover {
 }
 footer .container .landrick-usefull ul {
   color: #ADB5BD;
+}
+footer .container .landrick-usefull ul li i {
+  padding-right: 3px;
 }
 footer .container .landrick-usefull ul li h3 {
   color: #fff;
@@ -689,6 +696,10 @@ footer .credits .copyright .copyright-card img {
 
 @media all and (max-width: 1100px) {
   /* big landscape tablets, laptops, and desktops */
+  * br {
+    display: none;
+  }
+
   header nav ul#link-center li a i {
     display: none;
   }
@@ -750,5 +761,43 @@ footer .credits .copyright .copyright-card img {
   }
   main .work-information {
     width: 100%;
+  }
+  main .quickstart h2 {
+    text-align: center;
+  }
+  main .quickstart-npm {
+    width: 100%;
+  }
+  main .quickstart-npm ul {
+    display: block;
+  }
+  main .quickstart-npm ul li {
+    width: 100%;
+  }
+}
+@media (max-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  header nav ul#link-center {
+    display: none;
+  }
+  header nav ul#link-right {
+    display: none;
+  }
+  header nav .mobile-hamburger {
+    display: block;
+  }
+  header nav .mobile-hamburger i {
+    font-size: 20px;
+    color: #e94649;
+  }
+  header .jumbotron #jumbotron-button a:not(:first-child) {
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  main .quickstart-npm-subtitle span {
+    width: 100%;
+    display: block;
+    margin: 5px 0;
   }
 }

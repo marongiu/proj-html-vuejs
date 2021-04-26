@@ -41,7 +41,13 @@
               </a>
             </li>
           </ul>
+          
+          <!-- Hamburger -->
+          <div class="mobile-hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
         </nav>
+
 
 
         <!-- Jumbotron -->
@@ -111,9 +117,11 @@
         <p class="mt-1"><span class="green">$</span>npm install <span class="green">-g</span> claps.js</p>
       </div>
       <!-- Quickstart subtitle information -->
-      <div class="quickstart-npn-subtitle container mt-2">
-        <span class="grey mr-4"><i class="far fa-check-circle green"></i> Organize your data</span>
-        <span class="grey"><i class="far fa-check-circle green"></i> Work with any team</span>
+      <div class="container">
+        <div class="quickstart-npm-subtitle mt-2">
+          <span class="grey mr-4"><i class="far fa-check-circle green"></i> Organize your data</span>
+          <span class="grey"><i class="far fa-check-circle green"></i> Work with any team</span>
+        </div>
       </div>
       <!-- Sezione tools -->
       <div class="tools">
@@ -189,7 +197,7 @@
               <ul>
                 <li v-for="company in footer.companylist">
                   <h3>{{company.title}}</h3>
-                  <i v-if="(company.icon)" class="mr-1" :class="company.icon"></i>
+                  <i v-if="(company.icon)" :class="company.icon"></i>
                   <a href="">{{company.subtitle}}</a>
                 </li>
               </ul>
@@ -201,7 +209,7 @@
               <ul>
                 <li v-for="usefull in footer.usefull_link">
                   <h3>{{usefull.title}}</h3>
-                  <i v-if="(usefull.icon)" class="mr-1" :class="usefull.icon"></i>
+                  <i v-if="(usefull.icon)" :class="usefull.icon"></i>
                   <a href="">{{usefull.subtitle}}</a>
                 </li>
               </ul>

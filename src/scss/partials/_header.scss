@@ -1,13 +1,15 @@
 header {
   background: $header-background;
   padding-bottom: $pd-5;
-  border-bottom-right-radius: 10%;
-  border-bottom-left-radius: 10%;
   nav {
     @include flex(center, space-between, nowrap);
     padding-top: $pd-3;
     #logo img{
       max-width: 140px;
+    }
+
+    .mobile-hamburger {
+      display: none;
     }
     ul#link-center {
       @include flex(center,center,nowrap);
