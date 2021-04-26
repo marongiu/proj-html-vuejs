@@ -96,6 +96,27 @@ header nav #logo img {
 }
 header nav .mobile-hamburger {
   display: none;
+  position: relative;
+  cursor: pointer;
+}
+header nav .dropdown {
+  width: 100%;
+  position: absolute;
+  padding: 20px;
+  top: 70px;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0.5px 3px 3px 0px #c0ccf2;
+}
+header nav .dropdown ul li {
+  padding: 5px 0;
+}
+header nav .dropdown ul li a {
+  color: black;
+  text-transform: uppercase;
+}
+header nav .dropdown ul li a:hover {
+  color: #e94649;
 }
 header nav ul#link-center {
   display: flex;
@@ -757,7 +778,7 @@ footer .credits .copyright .copyright-card img {
     flex-wrap: wrap;
   }
   main .buy-card-container .buy-card {
-    margin-top: 2em;
+    margin-top: 1em;
   }
   main .work-information {
     width: 100%;
@@ -777,6 +798,10 @@ footer .credits .copyright .copyright-card img {
 }
 @media (max-width: 801px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .container {
+    max-width: 80%;
+  }
+
   header nav ul#link-center {
     display: none;
   }
@@ -787,7 +812,7 @@ footer .credits .copyright .copyright-card img {
     display: block;
   }
   header nav .mobile-hamburger i {
-    font-size: 20px;
+    font-size: 27px;
     color: #e94649;
   }
   header .jumbotron #jumbotron-button a:not(:first-child) {

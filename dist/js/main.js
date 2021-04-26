@@ -11,6 +11,7 @@ var app = new Vue({
   el: '#root',
   data: {
     email: '',
+    visible: false,
     // Scritte navbar centrali
     navbar_center: [{
       name: 'Home',
@@ -223,7 +224,12 @@ var app = new Vue({
   mounted: function mounted() {
     console.log("Ok");
   },
-  methods: {}
+  methods: {
+    dropdown: function dropdown() {
+      this.visible = true;
+      console.log(this.visible);
+    }
+  }
 });
 
 /***/ }),

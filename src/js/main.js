@@ -2,6 +2,7 @@ var app = new Vue({
   el: '#root',
   data: {
     email: '',
+    visible: false,
     // Scritte navbar centrali
     navbar_center: [
       {
@@ -285,6 +286,10 @@ var app = new Vue({
     console.log("Ok");
   },
   methods: {
+    dropdown: function () {
+      this.visible = true;
+      console.log(this.visible);
+    }
 
   }
 })

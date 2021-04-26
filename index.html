@@ -44,7 +44,13 @@
 
           <!-- Hamburger -->
           <div class="mobile-hamburger">
-            <i class="fas fa-bars"></i>
+            <i v-if="(visible == false)" class="fas fa-bars" @click="dropdown"></i>
+            <i v-if="(visible == true)" class="fas fa-times red" @click="(visible = false)"></i>
+          </div>
+          <div v-if="(visible)" class="dropdown">
+            <ul>
+              <li v-for="link in navbar_center"><a :href="link.url">{{link.name}}</a></li>
+            </ul>
           </div>
         </nav>
 
