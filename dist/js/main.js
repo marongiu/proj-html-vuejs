@@ -126,58 +126,75 @@ var app = new Vue({
       logo: './dist/img/logo-light.png',
       paragraph: 'Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.',
       social: [{
-        icon: 'fab fa-facebook-f'
+        icon: 'fab fa-facebook-f',
+        url: 'https://it-it.facebook.com/'
       }, {
-        icon: 'fab fa-instagram'
+        icon: 'fab fa-instagram',
+        url: 'https://www.instagram.com/'
       }, {
-        icon: 'fab fa-twitter'
+        icon: 'fab fa-twitter',
+        url: 'https://twitter.com/?lang=it'
       }, {
-        icon: 'fab fa-linkedin-in'
+        icon: 'fab fa-linkedin-in',
+        url: 'https://www.linkedin.com/'
       }],
       companylist: [{
         title: 'Company'
       }, {
         icon: 'fas fa-angle-right',
-        subtitle: 'About us'
+        subtitle: 'About us',
+        url: '#'
       }, {
         icon: 'fas fa-angle-right',
-        subtitle: 'Services'
+        subtitle: 'Services',
+        url: '#'
       }, {
         icon: 'fas fa-angle-right',
-        subtitle: 'Team'
+        subtitle: 'Team',
+        url: '#'
       }, {
         icon: 'fas fa-angle-right',
-        subtitle: 'Pricing'
+        subtitle: 'Pricing',
+        url: '#'
       }, {
         icon: 'fas fa-angle-right',
-        subtitle: 'Project'
+        subtitle: 'Project',
+        url: '#'
       }, {
         icon: 'fas fa-angle-right',
-        subtitle: 'Careers'
+        subtitle: 'Careers',
+        url: '#'
       }, {
         icon: 'fas fa-angle-right',
-        subtitle: 'Blog'
+        subtitle: 'Blog',
+        url: '#'
       }, {
         icon: 'fas fa-angle-right',
-        subtitle: 'Login'
+        subtitle: 'Login',
+        url: '#'
       }],
       usefull_link: [{
         title: 'Usefull link'
       }, {
         icon: 'fas fa-angle-right',
-        subtitle: 'Terms of Services'
+        subtitle: 'Terms of Services',
+        url: '#'
       }, {
         icon: 'fas fa-angle-right',
-        subtitle: 'Privacy Policy'
+        subtitle: 'Privacy Policy',
+        url: '#'
       }, {
         icon: 'fas fa-angle-right',
-        subtitle: 'Documentation'
+        subtitle: 'Documentation',
+        url: '#'
       }, {
         icon: 'fas fa-angle-right',
-        subtitle: 'Changelog'
+        subtitle: 'Changelog',
+        url: '#'
       }, {
         icon: 'fas fa-angle-right',
-        subtitle: 'Components'
+        subtitle: 'Components',
+        url: '#'
       }],
       newsletter: [{
         title: 'Newsletter',

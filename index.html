@@ -41,7 +41,7 @@
               </a>
             </li>
           </ul>
-          
+
           <!-- Hamburger -->
           <div class="mobile-hamburger">
             <i class="fas fa-bars"></i>
@@ -187,7 +187,7 @@
               <p class="grey mt-2">{{footer.paragraph}}</p>
               <ul class="mt-2">
                 <!-- Lista network -->
-                <li v-for="social in footer.social"><a href=""><i :class="social.icon"></i></a></li>
+                <li v-for="social in footer.social"><a :href="social.url"><i :class="social.icon"></i></a></li>
               </ul>
             </div>
           </div>
@@ -198,7 +198,7 @@
                 <li v-for="company in footer.companylist">
                   <h3>{{company.title}}</h3>
                   <i v-if="(company.icon)" :class="company.icon"></i>
-                  <a href="">{{company.subtitle}}</a>
+                  <a :href="company.url">{{company.subtitle}}</a>
                 </li>
               </ul>
             </div>
@@ -210,7 +210,7 @@
                 <li v-for="usefull in footer.usefull_link">
                   <h3>{{usefull.title}}</h3>
                   <i v-if="(usefull.icon)" :class="usefull.icon"></i>
-                  <a href="">{{usefull.subtitle}}</a>
+                  <a :href="usefull.url">{{usefull.subtitle}}</a>
                 </li>
               </ul>
             </div>
