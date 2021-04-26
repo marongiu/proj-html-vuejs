@@ -5,38 +5,46 @@ var app = new Vue({
     // Scritte navbar centrali
     navbar_center: [
       {
-        name: 'Home'
+        name: 'Home',
+        url: '#'
       },
       {
         name: 'Landing',
-        content: 'fa-angle-down'
+        content: 'fa-angle-down',
+        url: '#'
       },
       {
         name: 'Pages',
-        content: 'fa-angle-down'
+        content: 'fa-angle-down',
+        url: '#'
       },
       {
         name: 'Docs',
-        content: 'fa-angle-down'
+        content: 'fa-angle-down',
+        url: '#'
       }
     ],
     // Icone navbar destra
     navbar_right: [
       {
         prefix: 'fas',
-        icon: 'fa-search'
+        icon: 'fa-search',
+        url: '#'
       },
       {
         prefix: 'fab',
-        icon: 'fa-github'
+        icon: 'fa-github',
+        url: '#'
       },
       {
         prefix: 'fas',
-        icon: 'fa-box'
+        icon: 'fa-box',
+        url: '#'
       },
       {
         prefix: 'far',
-        icon: 'fa-user'
+        icon: 'fa-user',
+        url: '#'
       },
     ],
     patners: [
@@ -105,6 +113,7 @@ var app = new Vue({
         price: '$39.00',
         time: 'Per Month',
         description: 'Better for growing businesses that want more customers.',
+        ribbon: '<div class="ribbon ribbon-top-right"><span>Best</span></div>'
       },
       {
         type: 'Enterprise',
@@ -195,7 +204,7 @@ var app = new Vue({
         ],
         usefull_link: [
           {
-            title: 'Usefull Links'
+            title: 'Usefull link'
           },
           {
             icon: 'fas fa-angle-right',

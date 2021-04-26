@@ -11,21 +11,22 @@ footer {
         display: flex;
         align-items: center;
         li {
-          @include flex(center,center,nowrap);
-          color: $light-grey;
           margin: 0 $mg-0_5;
-          padding: $pd-1;
-          border-radius: 8px;
-          width: 30px;
-          height: 30px;
-          border: 1px solid #3c4858;
-          &:hover {
-            // mixin
-            cursor: pointer;
-            transition: 1s;
-            border: none;
-            background: $dark-blue;
-            color: $white;
+          a {
+            @include flex(center,center,nowrap);
+            padding: $pd-1;
+            border-radius: 8px;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #3c4858;
+            color: $light-grey;
+            &:hover {
+              color: $white;
+              cursor: pointer;
+              transition: 1s;
+              border: none;
+              background: $dark-blue;
+            }
           }
         }
       }

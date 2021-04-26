@@ -211,6 +211,9 @@ header nav ul#link-right li:not(:first-child) a i {
 .jumbotron .jumbotron-image {
   padding-top: 130px;
 }
+.jumbotron .jumbotron-image img {
+  width: 100%;
+}
 
 .patner {
   margin-top: 100px;
@@ -266,12 +269,27 @@ main .card-container .card {
   box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
   padding: 20px;
   font-weight: 400;
+  position: relative;
+}
+main .card-container .card .img-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  font-size: 180px;
+  color: #ADB5BD;
+  opacity: 0.22;
+  display: none;
 }
 main .card-container .card:hover {
   cursor: pointer;
   transform: translateY(-20px);
   transition: 2s;
   box-shadow: 5px 5px 5px 5px rgba(60, 72, 88, 0.2);
+}
+main .card-container .card:hover .img-hover {
+  display: block;
 }
 main .card-container .card .icon {
   display: flex;
@@ -391,17 +409,18 @@ main .buy-card-container {
   flex-wrap: nowrap;
 }
 main .buy-card-container .buy-card {
+  position: relative;
   color: #8492A6;
   margin-right: 30px;
   box-shadow: 0 0 2px #ADB5BD;
-  border-bottom: 5px solid #ADB5BD;
+  border-bottom: 3px solid #ADB5BD;
   padding: 20px;
   border-radius: 10px;
 }
 main .buy-card-container .buy-card:hover {
   cursor: pointer;
   transition: 1.2s;
-  border-bottom: 5px solid #e94649;
+  border-bottom: 3px solid #e94649;
   transform: scale(1.03);
 }
 main .buy-card-container .buy-card h2 {
@@ -412,7 +431,7 @@ main .buy-card-container .buy-card hr {
   height: 1px;
   background: #ADB5BD;
 }
-main .buy-card-container .buy-card span {
+main .buy-card-container .buy-card span#badge {
   padding: 10px 20px;
   background: #2F55D41A;
   color: #e94649;
@@ -434,6 +453,52 @@ main .buy-card-container .buy-card .buy-button button {
   border-radius: 10px;
   font-weight: bold;
 }
+main .buy-card-container .buy-card .ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+}
+main .buy-card-container .buy-card .ribbon::before,
+main .buy-card-container .buy-card .ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+  border: 5px solid #d55a0d;
+}
+main .buy-card-container .buy-card .ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 2px 0;
+  background-color: #f17425;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+main .buy-card-container .buy-card .ribbon-top-right {
+  top: -5px;
+  right: -5px;
+}
+main .buy-card-container .buy-card .ribbon-top-right::before,
+main .buy-card-container .buy-card .ribbon-top-right::after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+main .buy-card-container .buy-card .ribbon-top-right::before {
+  top: -5px;
+  left: 80px;
+}
+main .buy-card-container .buy-card .ribbon-top-right::after {
+  bottom: 80px;
+  right: -5px;
+}
+main .buy-card-container .buy-card .ribbon-top-right span {
+  left: 10px;
+  top: 10px;
+  transform: rotate(45deg);
+}
 main .work-information {
   margin: 100px auto;
   text-align: center;
@@ -445,7 +510,7 @@ main .work-information .work-form {
 }
 main .work-information .work-form input {
   padding: 12px 20px;
-  width: 100%;
+  min-width: 100%;
   border-radius: 30px;
   border: none;
   border: 1px solid #e9ecef;
@@ -495,24 +560,26 @@ footer .container .landrick-social ul {
   align-items: center;
 }
 footer .container .landrick-social ul li {
+  margin: 0 5px;
+}
+footer .container .landrick-social ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
-  color: #ADB5BD;
-  margin: 0 5px;
   padding: 10px;
   border-radius: 8px;
   width: 30px;
   height: 30px;
   border: 1px solid #3c4858;
+  color: #ADB5BD;
 }
-footer .container .landrick-social ul li:hover {
+footer .container .landrick-social ul li a:hover {
+  color: #fff;
   cursor: pointer;
   transition: 1s;
   border: none;
   background: #e94649;
-  color: #fff;
 }
 footer .container .landrick-company ul {
   color: #ADB5BD;

@@ -1,17 +1,18 @@
 .buy-card-container {
   @include flex(center,space-between,nowrap);
   .buy-card {
+    position: relative;
     color: $grey;
     margin-right: $mg-3;
     box-shadow: 0 0 2px $light-grey;
-    border-bottom: 5px solid $light-grey;
+    border-bottom: 3px solid $light-grey;
     padding: $pd-2;
     border-radius: 10px;
 
     &:hover {
       cursor: pointer;
       transition: 1.2s;
-      border-bottom: 5px solid $dark-blue;
+      border-bottom: 3px solid $dark-blue;
       transform: scale(1.03);
     }
 
@@ -23,7 +24,7 @@
       height: 1px;
       background: $light-grey;
     }
-    span {
+    span#badge {
       padding: $pd-1 $pd-2;
       background: $social-background;
       color: $dark-blue;
@@ -48,6 +49,54 @@
         font-weight: bold;
       }
     }
+    // Fiocco
+    .ribbon {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      position: absolute;
+    }
+    .ribbon::before,
+    .ribbon::after {
+      position: absolute;
+      z-index: -1;
+      content: '';
+      display: block;
+      border: 5px solid $border-ribbon;
+    }
+    .ribbon span {
+      position: absolute;
+      display: block;
+      width: 225px;
+      padding: 2px 0;
+      background-color: $background-ribbon;
+      color: $white;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+
+    .ribbon-top-right {
+      top: -5px;
+      right: -5px;
+    }
+    .ribbon-top-right::before,
+    .ribbon-top-right::after {
+      border-top-color: transparent;
+      border-right-color: transparent;
+    }
+    .ribbon-top-right::before {
+      top: -5px;
+      left: 80px;
+    }
+    .ribbon-top-right::after {
+      bottom: 80px;
+      right: -5px;
+    }
+    .ribbon-top-right span {
+      left: 10px;
+      top: 10px;
+      transform: rotate(45deg);
+    }
   }
 }
 
@@ -61,7 +110,7 @@
     position: relative;
     input {
       padding: 12px 20px;
-      width: 100%;
+      min-width: 100%;
       border-radius: 30px;
       border: none;
       border: 1px solid $border-grey;

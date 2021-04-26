@@ -18,13 +18,30 @@
     box-shadow:  0 0 3px $box-shadow-card;
     padding: $pd-2;
     font-weight: 400;
+    position: relative;
 
-      &:hover {
+    .img-hover {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      font-size: 180px;
+      color: $light-grey;
+      opacity: 0.22;
+      display: none;
+    }
+      &:hover{
         cursor: pointer;
         transform: translateY(-20px);
         transition: 2s;
         box-shadow: 5px 5px 5px 5px $box-shadow-card-hover;
       }
+
+      &:hover .img-hover {
+        display: block;
+      }
+
 
     .icon {
       @include flex(center,center,nowrap);

@@ -26,7 +26,7 @@
           <ul id="link-center">
             <li v-for="link in navbar_center" >
               <!-- Nomi link navbar center -->
-              <a href="">{{link.name}}
+              <a :href="link.url">{{link.name}}
                 <!-- Icone navbar center -->
                 <i v-if="(link.content)" class="fas" :class="link.content"></i>
               </a>
@@ -36,7 +36,7 @@
           <!-- Navbar right -->
           <ul id="link-right">
             <li v-for="content in navbar_right">
-              <a href="">
+              <a :href="content.url">
                 <i :class="`${content.prefix} ${content.icon}`"></i>
               </a>
             </li>
@@ -91,6 +91,7 @@
           <h3 >{{card.title}}</h3>
           <p>{{card.paragraph}}</p>
           <a  href="">{{card.anchor}}</a>
+          <i class="img-hover":class="card.icon"></i>
         </div>
       </div>
       <!-- Sezione npm -->
@@ -143,7 +144,8 @@
         <!-- Sezione card acquisto -->
         <div class="buy-card-container mt-100">
           <div class="buy-card" v-for="buycard in section_buy">
-            <span class="dark-blue">{{buycard.type}}</span>
+            <div v-html="buycard.ribbon"></div>
+            <span id="badge" class="dark-blue">{{buycard.type}}</span>
             <h2 class="mt-2">{{buycard.price}}</h2>
             <p class="mt-1">{{buycard.time}}</p>
             <p class="mt-1">{{buycard.description}}</p>
@@ -171,18 +173,18 @@
       <!-- Inizio footer a colonne -->
       <footer v-for="footer in footer">
         <div class="container">
-          <div class="col-4">
+          <div class="col-4 col-md-12 col-xs-12">
             <div class="landrick-social">
               <img :src="footer.logo" alt="">
               <p class="grey mt-2">{{footer.paragraph}}</p>
               <ul class="mt-2">
                 <!-- Lista network -->
-                <li v-for="social in footer.social"><i :class="social.icon"></i></li>
+                <li v-for="social in footer.social"><a href=""><i :class="social.icon"></i></a></li>
               </ul>
             </div>
           </div>
           <!-- Lista company -->
-          <div class="col-2">
+          <div class="col-2 col-md-4 col-xs-12">
             <div class="landrick-company">
               <ul>
                 <li v-for="company in footer.companylist">
@@ -194,7 +196,7 @@
             </div>
           </div>
           <!-- Lista useful Link -->
-          <div class="col-3">
+          <div class="col-3 col-md-4 col-xs-12">
             <div class="landrick-usefull">
               <ul>
                 <li v-for="usefull in footer.usefull_link">
@@ -207,7 +209,7 @@
           </div>
 
           <!-- Newsletter -->
-          <div class="col-3">
+          <div class="col-3 col-md-4 col-xs-12">
             <div class="landrick-newsletter" v-for="newsletter in footer.newsletter">
               <h3>{{newsletter.title}}</h3>
               <p class="grey mt-2">{{newsletter.paragraph}}</p>
