@@ -174,7 +174,7 @@
       <footer v-for="footer in footer">
         <div class="container">
           <div class="col-4 col-md-12 col-xs-12">
-            <div class="landrick-social">
+            <div class="landrick-social mt-2">
               <img :src="footer.logo" alt="">
               <p class="grey mt-2">{{footer.paragraph}}</p>
               <ul class="mt-2">
@@ -184,8 +184,8 @@
             </div>
           </div>
           <!-- Lista company -->
-          <div class="col-2 col-md-4 col-xs-12">
-            <div class="landrick-company">
+          <div class="col-2 col-md-12 col-xs-12">
+            <div class="landrick-company mt-2">
               <ul>
                 <li v-for="company in footer.companylist">
                   <h3>{{company.title}}</h3>
@@ -196,8 +196,8 @@
             </div>
           </div>
           <!-- Lista useful Link -->
-          <div class="col-3 col-md-4 col-xs-12">
-            <div class="landrick-usefull">
+          <div class="col-3 col-md-12 col-xs-12">
+            <div class="landrick-usefull mt-2">
               <ul>
                 <li v-for="usefull in footer.usefull_link">
                   <h3>{{usefull.title}}</h3>
@@ -209,8 +209,8 @@
           </div>
 
           <!-- Newsletter -->
-          <div class="col-3 col-md-4 col-xs-12">
-            <div class="landrick-newsletter" v-for="newsletter in footer.newsletter">
+          <div class="col-3 col-md-12 col-xs-12">
+            <div class="landrick-newsletter mt-2" v-for="newsletter in footer.newsletter">
               <h3>{{newsletter.title}}</h3>
               <p class="grey mt-2">{{newsletter.paragraph}}</p>
               <div class="landrick-subscribe mt-2">

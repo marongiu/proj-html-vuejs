@@ -277,7 +277,7 @@ main .card-container .card .img-hover {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
-  font-size: 180px;
+  font-size: 130px;
   color: #ADB5BD;
   opacity: 0.22;
   display: none;
@@ -685,4 +685,70 @@ footer .credits .copyright i {
 footer .credits .copyright .copyright-card img {
   max-width: 35px;
   margin-right: 5px;
+}
+
+@media all and (max-width: 1100px) {
+  /* big landscape tablets, laptops, and desktops */
+  header nav ul#link-center li a i {
+    display: none;
+  }
+  header .jumbotron {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  header .jumbotron .jumbotron-title {
+    text-align: center;
+  }
+  header .patner ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  main .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main .card-container .card {
+    margin-top: 2em;
+  }
+  main .tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main .tools .tools-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  main .tools .tools-title h2 {
+    text-align: center;
+  }
+  main .tools .tools-image {
+    margin-top: 2em;
+    width: 100%;
+    max-width: 500px;
+  }
+  main .buy-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main .buy-card-container .buy-card {
+    margin-top: 2em;
+  }
+  main .work-information {
+    width: 100%;
+  }
 }
